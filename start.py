@@ -67,8 +67,5 @@
 # if x != None:
 #     print(str(x[0])+'.', "Value defolt:", x[1])
 
-set_a = {1, 2, 3}
-set_b = {4, 5, 6}
-x = set_a.union(set_b)
-print(x)
+
 
