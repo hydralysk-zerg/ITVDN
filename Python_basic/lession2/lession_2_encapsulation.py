@@ -12,7 +12,6 @@
 #     def get_private_test(self):
 #         return self.__private_test
 
-
 #     @staticmethod
 #     def __private_function():
 #         print("I's private function")
@@ -44,23 +43,36 @@
 # user.name = 'Joaba'
 # print(user.name)
 
-class Worker:
-    RIGHTS = 'Equal'
-    SALARY_CLASS = {
-            'A': 100,
-            'B': 200,
-            'C': 300
-        }
-    def __init__(self, working_class):
-        self.__salary = self.__get_salary(working_class)
+# class Worker:
+#     RIGHTS = 'Equal'
+#     SALARY_CLASS = {
+#             'A': 100,
+#             'B': 200,
+#             'C': 300
+#         }
+#     def __init__(self, working_class):
+#         self.__salary = self.__get_salary(working_class)
     
-    @staticmethod
-    def __get_salary(working_class):
-        return Worker.SALARY_CLASS.get(working_class, 0)
+#     @staticmethod
+#     def __get_salary(working_class):
+#         return Worker.SALARY_CLASS.get(working_class, 0)
 
-    @property
-    def salary(self):
-        return self.__salary
+#     @property
+#     def salary(self):
+#         return self.__salary
 
-w = Worker(working_class='B')
-print(w.salary)
+# w = Worker(working_class='B')
+# print(w.salary)
+
+# ------------------------- Task example ---------------------------
+
+class TextProcessor:
+    pass
+
+
+# ------------------------- Homework --------------------------------
+# 1. Написать класс, который описывает пользователя (class User), сделать ему приватный
+# атрибут age, который передается в конструктор, публичный атрибут name, который так же
+# передается в конструктор.
+# 2. Написать getter и setter для атрибута age.
+# 3. Добавить в setter проверку на валидный возраст (не отрицательное, целое число).
