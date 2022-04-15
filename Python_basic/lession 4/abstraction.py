@@ -102,27 +102,27 @@
 # PS: организуйте правильную инкапсуляцию. Вы должны добавлять элементы в класс Database
 # только через метод write, но никак не напрямую через атрибут elements.
 
-class Database:
-    def __init__(self, DATABASE_LIST) -> None:
-        self._DATABASE_LIST = DATABASE_LIST
+# class Database:
+#     def __init__(self, DATABASE_LIST) -> None:
+#         self._DATABASE_LIST = DATABASE_LIST
 
-    def read_date(self, criteria):
-        pass
+#     def read_date(self, criteria):
+#         pass
     
-    def write_data(self, DATABASE_LIST, element):
-        DATABASE_LIST.append(element)
+#     def write_data(self, DATABASE_LIST, element):
+#         DATABASE_LIST.append(element)
 
-class Data:
-    def __init__(self, country, name, age, gender, height, weight) -> None:
-        self._country = country
-        self.name = name
-        self.age = age
-        self.gender = gender
-        self.height = height 
-        self.weight = weight
+# class Data:
+#     def __init__(self, country, name, age, gender, height, weight) -> None:
+#         self._country = country
+#         self.name = name
+#         self.age = age
+#         self.gender = gender
+#         self.height = height 
+#         self.weight = weight
 
-    def data(self, country, name, age, gender, height, weight):
-        element = [country, name, age, gender, height, weight]
-        return element
+#     def data(self, country, name, age, gender, height, weight):
+#         element = [country, name, age, gender, height, weight]
+#         return element
 
-d = Database.write_data(element=('Ukraina', 'Ivan', 25, 'man', 170, 70))
+# d = Database.write_data(element=('Ukraina', 'Ivan', 25, 'man', 170, 70))
